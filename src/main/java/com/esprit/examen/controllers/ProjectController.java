@@ -17,7 +17,9 @@ public class ProjectController {
 
     @GetMapping
     public List<CategorieProduit> getCategorieProduit() {
+        // Modification de la nouvelle branche
         List<CategorieProduit> list = categorieProduitService.retrieveAllCategorieProduits();
+        System.out.println("Nouvelle branche");
         return list;
     }
 
