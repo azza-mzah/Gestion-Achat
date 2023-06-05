@@ -17,10 +17,12 @@ public class ProjectController {
 
     @GetMapping
     public List<CategorieProduit> getCategorieProduit() {
-        // Modification de la branche actuelle
+        // Modification de la branche principale
         List<CategorieProduit> list = categorieProduitService.retrieveAllCategorieProduits();
+        System.out.println("Branche Azza");
         return list;
     }
+
 
     @GetMapping("/{categorieProduit-id}")
     public CategorieProduit retrieveCategorieProduit(@PathVariable("categorieProduit-id") Long categorieProduitId) {
