@@ -27,8 +27,8 @@ public class CategorieProduitController {
 	
 	@GetMapping
 	public List<CategorieProduit> getCategorieProduit() {
-		List<CategorieProduit> Thelist = categorieProduitService.retrieveAllCategorieProduits();
-		return Thelist;
+		List<CategorieProduit> thelist = categorieProduitService.retrieveAllCategorieProduits();
+		return thelist;
 	}
 
 	@GetMapping("/{categorieProduit-id}")
