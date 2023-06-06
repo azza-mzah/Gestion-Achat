@@ -26,6 +26,7 @@ public class CategorieProduitController {
 	private final ICategorieProduitService categorieProduitService;
 	
 	@GetMapping
+	//changement effecté par Azza
 	public List<CategorieProduit> getCategorieProduit() {
 		List<CategorieProduit> list = categorieProduitService.retrieveAllCategorieProduits();
 		return list;
